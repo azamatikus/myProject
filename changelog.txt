@@ -2,28 +2,7 @@ SmartGit 18.2.5 (2019-01-30)
 ============================
 New Features, Improvements
 --------------------------
-- Git:
-    - Gerrit: added low-level property gerrit.checkCommitMsgHookContent
-      to avoid false-positive Gerrit detection
-    - Log:
-        - Branches, Checkout: added low-level property
-          log.checkout.forceSelectionOfBranchAnchor
-- Linux startup script:
-    - easier switching back to GTK2
 
-Fixed Bugs
-----------
-- Git:
-    - Commit: Amend-option was disabled for merge
-    - Log:
-        - Commits view: revealing HEAD should always reveal HEAD and not
-          stay at working tree node (e.g. double-clicking from Journal)
-        - Refresh:
-            - log.wt.refreshOpenButUnselectedModels broke refresh of
-              commits
-            - breaks in case of invalid Bisect configuration (missing
-              "start" branch)
-- GUI:
     - Customize Accelerators dialog: internal error if a filtered-out
       accelerator is cleared by setting another
     - Compare/Merge, Apply Selection: possible internal error if all was
